@@ -2,24 +2,10 @@
 <html lang="en">
 <head>
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1832780204344596');
-fbq('track', 'PageView');
-</script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Malik Mumbai VIP - Cricket Predictions</title>
+<title>Malik Mumbai VIP</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -34,9 +20,6 @@ font-family:'Poppins',sans-serif;
 
 body{
 min-height:100vh;
-display:flex;
-align-items:center;
-justify-content:center;
 background:linear-gradient(-45deg,#020617,#0f172a,#020617,#1e1b4b);
 background-size:400% 400%;
 animation:bg 10s infinite linear;
@@ -44,17 +27,23 @@ color:white;
 padding:15px;
 }
 
-/* background animation */
+/* bg animation */
 @keyframes bg{
 0%{background-position:0% 50%;}
 50%{background-position:100% 50%;}
 100%{background-position:0% 50%;}
 }
 
+/* FULL WIDTH FIX */
+.wrapper{
+width:100%;
+max-width:420px;
+margin:auto;
+}
+
 /* container */
 .container{
 width:100%;
-max-width:380px;
 padding:25px 20px;
 border-radius:18px;
 background:rgba(255,255,255,0.06);
@@ -79,11 +68,10 @@ font-weight:700;
 margin-bottom:6px;
 }
 
-/* description */
+/* desc */
 .desc{
 font-size:14px;
 opacity:.85;
-line-height:1.5;
 margin-bottom:18px;
 }
 
@@ -97,21 +85,16 @@ font-size:16px;
 text-decoration:none;
 color:white;
 background:linear-gradient(90deg,#00d2ff,#3a7bd5);
-box-shadow:0 8px 25px rgba(0,0,0,.6);
-transition:.3s;
-}
-
-.cta:active{
-transform:scale(0.97);
+margin-bottom:15px;
 }
 
 /* features */
 .features{
-margin-top:18px;
-text-align:left;
 background:rgba(0,0,0,.3);
 padding:15px;
 border-radius:12px;
+text-align:left;
+margin-bottom:15px;
 }
 
 .features li{
@@ -128,7 +111,6 @@ margin-right:8px;
 
 /* ticker */
 .transaction{
-margin-top:15px;
 background:rgba(0,0,0,.35);
 padding:8px;
 border-radius:8px;
@@ -136,6 +118,7 @@ font-size:12px;
 overflow:hidden;
 height:28px;
 position:relative;
+margin-bottom:15px;
 }
 
 .ticker{
@@ -149,46 +132,27 @@ animation:scroll 12s linear infinite;
 100%{transform:translateX(-100%)}
 }
 
-/* footer */
-.footer{
-margin-top:12px;
-font-size:11px;
-opacity:.6;
-}
-
-/* ad button */
+/* ad button FIX */
 .netad-btn{
 text-align:center;
-margin-top:15px;
+margin-top:10px;
 }
 
 .netad-btn a{
 display:inline-block;
-padding:8px 18px;
+padding:10px 20px;
 font-size:12px;
 text-decoration:none;
 color:#fff;
-border-radius:25px;
+border-radius:30px;
 background:linear-gradient(90deg,#00c6ff,#0072ff);
-box-shadow:0 5px 15px rgba(0,0,0,.4);
 }
 
-/* MOBILE EXTRA OPTIMIZATION */
-@media(max-width:400px){
-
-h1{
-font-size:22px;
-}
-
-.desc{
-font-size:13px;
-}
-
-.cta{
-font-size:15px;
-padding:13px;
-}
-
+/* footer */
+.footer{
+font-size:11px;
+opacity:.6;
+margin-top:10px;
 }
 
 </style>
@@ -196,6 +160,8 @@ padding:13px;
 </head>
 
 <body>
+
+<div class="wrapper">
 
 <div class="container">
 
@@ -222,7 +188,7 @@ Join thousands of cricket fans getting exclusive match predictions and expert an
 
 <div class="transaction">
 <div class="ticker">
-🔥 Rahul joined VIP • 🔥 Aman joined VIP • 🔥 Suresh joined VIP • 🔥 Vikas joined VIP • 🔥 Jatin joined VIP • 🔥 Ankit joined VIP • 🔥 Aditya joined VIP •
+🔥 Rahul joined VIP • 🔥 Aman joined VIP • 🔥 Suresh joined VIP • 🔥 Vikas joined VIP • 🔥 Jatin joined VIP • 🔥 Ankit joined VIP •
 </div>
 </div>
 
@@ -232,10 +198,13 @@ Join thousands of cricket fans getting exclusive match predictions and expert an
 
 </div>
 
+<!-- FIXED: ab ye neeche center me aayega -->
 <div class="netad-btn">
 <a href="https://t.me/+2L9idwqcixg2OTZl" target="_blank">
 ⚡ Ad Managed by : S M Agency
 </a>
+</div>
+
 </div>
 
 </body>
