@@ -20,11 +20,14 @@ font-family:'Poppins',sans-serif;
 
 body{
 min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
 background:linear-gradient(-45deg,#020617,#0f172a,#020617,#1e1b4b);
 background-size:400% 400%;
 animation:bg 10s infinite linear;
-color:white;
-padding:15px;
+padding:12px;
+color:#fff;
 }
 
 /* bg animation */
@@ -34,72 +37,67 @@ padding:15px;
 100%{background-position:0% 50%;}
 }
 
-/* FULL WIDTH FIX */
-.wrapper{
-width:100%;
-max-width:420px;
-margin:auto;
-}
-
-/* container */
+/* CARD */
 .container{
 width:100%;
-padding:25px 20px;
+max-width:360px;
+padding:22px 18px;
 border-radius:18px;
 background:rgba(255,255,255,0.06);
-backdrop-filter:blur(15px);
+backdrop-filter:blur(18px);
 border:1px solid rgba(255,255,255,0.15);
-box-shadow:0 20px 50px rgba(0,0,0,.6);
+box-shadow:0 20px 60px rgba(0,0,0,.6);
 text-align:center;
 }
 
 /* logo */
 .logo{
-width:80px;
+width:75px;
 border-radius:50%;
 margin-bottom:10px;
-box-shadow:0 0 20px #3b82f6;
+box-shadow:0 0 18px #3b82f6;
 }
 
 /* title */
 h1{
-font-size:26px;
+font-size:24px;
 font-weight:700;
 margin-bottom:6px;
 }
 
 /* desc */
 .desc{
-font-size:14px;
+font-size:13px;
 opacity:.85;
-margin-bottom:18px;
+margin-bottom:16px;
+line-height:1.5;
 }
 
 /* CTA */
 .cta{
 display:block;
-padding:15px;
-border-radius:35px;
+padding:14px;
+border-radius:30px;
 font-weight:600;
-font-size:16px;
+font-size:15px;
 text-decoration:none;
-color:white;
+color:#fff;
 background:linear-gradient(90deg,#00d2ff,#3a7bd5);
-margin-bottom:15px;
+margin-bottom:14px;
 }
 
 /* features */
 .features{
-background:rgba(0,0,0,.3);
-padding:15px;
+background:rgba(0,0,0,.35);
+padding:14px;
 border-radius:12px;
 text-align:left;
-margin-bottom:15px;
+margin-bottom:14px;
 }
 
 .features li{
 list-style:none;
-margin:7px 0;
+margin:6px 0;
 font-size:13px;
 }
 
@@ -111,14 +109,14 @@ margin-right:8px;
 
 /* ticker */
 .transaction{
-background:rgba(0,0,0,.35);
-padding:8px;
+background:rgba(0,0,0,.4);
+padding:7px;
 border-radius:8px;
-font-size:12px;
+font-size:11px;
 overflow:hidden;
-height:28px;
+height:26px;
 position:relative;
-margin-bottom:15px;
+margin-bottom:12px;
 }
 
 .ticker{
@@ -132,27 +130,26 @@ animation:scroll 12s linear infinite;
 100%{transform:translateX(-100%)}
 }
 
-/* ad button FIX */
+/* ad button INSIDE card */
 .netad-btn{
-text-align:center;
-margin-top:10px;
+margin-top:8px;
 }
 
 .netad-btn a{
 display:inline-block;
-padding:10px 20px;
-font-size:12px;
+padding:9px 16px;
+font-size:11px;
 text-decoration:none;
 color:#fff;
-border-radius:30px;
+border-radius:25px;
 background:linear-gradient(90deg,#00c6ff,#0072ff);
 }
 
 /* footer */
 .footer{
-font-size:11px;
-opacity:.6;
 margin-top:10px;
+font-size:10px;
+opacity:.6;
 }
 
 </style>
@@ -160,8 +157,6 @@ margin-top:10px;
 </head>
 
 <body>
-
-<div class="wrapper">
 
 <div class="container">
 
@@ -192,17 +187,15 @@ Join thousands of cricket fans getting exclusive match predictions and expert an
 </div>
 </div>
 
-<div class="footer">
-© 2026 Malik Mumbai VIP
-</div>
-
-</div>
-
-<!-- FIXED: ab ye neeche center me aayega -->
+<!-- NOW INSIDE CARD -->
 <div class="netad-btn">
 <a href="https://t.me/+2L9idwqcixg2OTZl" target="_blank">
 ⚡ Ad Managed by : S M Agency
 </a>
+</div>
+
+<div class="footer">
+© 2026 Malik Mumbai VIP
 </div>
 
 </div>
